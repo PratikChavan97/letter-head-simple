@@ -1,0 +1,226 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	height: 100%;
+	width: 100%;
+	padding: 2em 5em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-family: Roboto, sans-serif;
+}
+
+#main-container{
+	
+	width: 70%;
+	height: 100%;
+	padding: 4em 3em 5em;
+	position: relative;
+	overflow: hidden;
+	box-shadow: 20px 20px 20px 5px gray;
+}
+
+header{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	gap: 0.2em;
+}
+
+.logo-container{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 10px;
+}
+
+.logo img{
+	height: 100px;
+}
+
+.hero{
+	font-weight: 500;
+}
+
+.hero .hero-span{
+	font-weight: 900;
+}
+
+.sub-hero{
+	font-weight: 600;
+	font-size: 1.1em;
+	color: gray;
+}
+
+.info{
+	margin-top: 2.4em;
+	margin-bottom: 2.8em;
+}
+
+.info,
+main,
+footer,
+.sender{
+		padding-left: 1.2em;
+}
+
+.container{
+	display: flex;
+	flex-direction: column;
+	gap: 0.4em;
+}
+
+.inside{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+main{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	gap: 1em;
+	width: 93%;
+}
+
+main p{
+	width: 98%;
+}
+
+.sender{
+	margin-top: 2.8em;
+	margin-left: 1em;
+}
+
+.sender .sign{
+	font-size: 2.3em;
+}
+
+.sender-name{
+	margin-left: 1em;
+}
+
+.sender-name .name{
+	fotn-weight: 800;
+	font-size: 18px;
+	font-family: sans-serif;
+}
+.footer-container{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: left;
+	gap: 10px;
+}
+
+.items{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+	gap: 10px;
+}
+
+.font-logo{
+	height: 30px;
+	width: 30px;
+	text-align: center;
+	padding-top: 5px;
+	background-color: #6CB4EE;
+	border-radius: 0 10px 0 10px;
+}
+
+
+
+.employee{
+	color: #6CB4EE;
+	font-weight: 500;
+}
+
+.sign{
+	font-family: "Zeyada", cursive;
+}
+
+.black{
+	position: absolute;
+	background-color: black;
+}
+
+.bottom-full{
+	height: 25px;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+}
+
+.slant{
+	left: 132px;
+	height: 25px;
+	width: 100px;
+	bottom: 31px;
+	transform: rotate(40deg);
+}
+
+.upper{
+	height: 450px;
+	width: 450px;
+	background-color:#89CFF0;
+	transform: rotate(-50deg);
+	position: absolute;
+	bottom: -360px;
+	left: -200px;
+	z-index: 2;
+}
+
+.inner{
+	height:400px;
+	width: 400px;
+	background-color: #5072A7;
+}
+
+.horizontal{
+	height: 25px;
+	width: 50px;
+	left: 102px;
+	bottom: 60px;
+	z-index: 1;
+}
+
+
+@media (max-width: 1000px){
+	
+	body{
+		font-size: 12px;
+	}
+	
+	#main-container{
+		width: 100%;
+		height: 100%;
+	}
+	
+	header{
+		width: 90%;
+	}
+	
+	.logo img{
+		height: 70px;
+	}
+	
+	.hero{
+		font-size: 1.7em;
+	}
+	
+	.sub-hero{
+		font-size: 1.2em;
+	}
+}
